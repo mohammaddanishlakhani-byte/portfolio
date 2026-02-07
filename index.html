@@ -7,12 +7,12 @@
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Portfolio of Mohammad Danish Salim Lakhani - B.Sc. Computer Science Student at Bhavan's College, Web Developer, Data Management Intern, and Technology Enthusiast from Mumbai.">
-    <meta name="keywords" content="web developer, computer science student, portfolio, Mumbai, Bhavan's College, internships, full stack developer, JavaScript, Node.js, HTML, CSS">
+    <meta name="keywords" content="web developer, computer science student, portfolio, Mumbai, Bhavan's College, internships, full stack developer, JavaScript, Node.js, HTML, CSS, weather app, openweathermap api">
     <meta name="author" content="Mohammad Danish Salim Lakhani">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Mohammad Danish Salim Lakhani | Portfolio">
-    <meta property="og:description" content="Computer Science Student | Web Developer | Data Management Intern">
+    <meta property="og:description" content="Computer Science Student | Web Developer | Data Management Intern | Weather App Developer">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mohammaddanishlakhani.portfolio.com">
     <meta property="og:image" content="profile.jpeg">
@@ -591,6 +591,7 @@
 
         .project-card:nth-child(2) { animation-delay: 0.2s; }
         .project-card:nth-child(3) { animation-delay: 0.4s; }
+        .project-card:nth-child(4) { animation-delay: 0.6s; }
 
         /* PROJECT THUMBNAIL STYLES - UPDATED */
         .project-thumbnail {
@@ -1084,6 +1085,7 @@
                         <span class="skill-tag">Chart.js</span>
                         <span class="skill-tag">LocalStorage</span>
                         <span class="skill-tag">Render</span>
+                        <span class="skill-tag">OpenWeatherMap API</span>
                     </div>
                 </div>
             </div>
@@ -1119,7 +1121,7 @@
                 </div>
                 <div class="progress-item">
                     <div class="progress-info">
-                        <span>Data Management</span>
+                        <span>API Integration</span>
                         <span>80%</span>
                     </div>
                     <div class="progress-bar">
@@ -1179,7 +1181,7 @@
         </div>
     </section>
 
-    <!-- Projects Section - UPDATED with Thumbnail View -->
+    <!-- Projects Section - UPDATED with Weather App Project -->
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
@@ -1189,9 +1191,39 @@
                 <button class="filter-btn" data-filter="web">Web Development</button>
                 <button class="filter-btn" data-filter="fullstack">Full Stack</button>
                 <button class="filter-btn" data-filter="team">Team Projects</button>
+                <button class="filter-btn" data-filter="api">API Projects</button>
             </div>
             
             <div class="projects-grid">
+                <!-- Weather App Project - ADDED -->
+                <div class="project-card" data-category="web api">
+                    <!-- weatherapp.jpeg Thumbnail -->
+                    <div class="project-thumbnail">
+                        <img src="weatherapp.jpeg" alt="Weather Forecast App Screenshot">
+                        <div class="project-overlay">
+                            <button class="view-project-btn" onclick="window.open('https://mohammaddanishlakhani-byte.github.io/weather-app/', '_blank')">
+                                View Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>🌤️ Weather Forecast App</h3>
+                        <p>A modern, responsive weather application that provides real-time weather data using OpenWeatherMap API. Features include current weather, 5-day forecast, location detection, and Celsius/Fahrenheit conversion.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">OpenWeatherMap API</span>
+                            <span class="tech-tag">Responsive Design</span>
+                            <span class="tech-tag">Geolocation API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mohammaddanishlakhani-byte.github.io/weather-app/" target="_blank" class="btn">Live Demo</a>
+                            <a href="https://github.com/mohammaddanishlakhani-byte/weather-app" target="_blank" class="btn btn-outline">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="project-card" data-category="web fullstack">
                     <!-- ChatApp.jpeg Thumbnail -->
                     <div class="project-thumbnail">
@@ -1327,9 +1359,9 @@
                 </div>
                 
                 <div class="achievement-card">
-                    <i class="fas fa-briefcase"></i>
-                    <h3>Professional Experience</h3>
-                    <p>Gained 6+ months of professional experience at Wipro LTD alongside academic pursuits.</p>
+                    <i class="fas fa-cloud-sun"></i>
+                    <h3>Weather App Project</h3>
+                    <p>Successfully built and deployed a fully functional weather application with API integration and responsive design.</p>
                 </div>
             </div>
         </div>
@@ -1414,7 +1446,7 @@
             <div class="copyright">
                 <p>&copy; 2025 Mohammad Danish Salim Lakhani. All rights reserved.</p>
                 <p style="margin-top: 10px;">B.Sc. Computer Science | Bhavan's College (Autonomous) | Mumbai</p>
-                <p style="margin-top: 10px; font-size: 0.8rem;">Last updated: January 2025</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">Last updated: January 2025 | Featured Projects: Weather App, Chat App, Expense Tracker, TeamTrack</p>
             </div>
         </div>
     </footer>
@@ -1472,7 +1504,8 @@
             "Mohammad Danish Salim Lakhani",
             "Computer Science Student",
             "Web Developer",
-            "Data Management Intern"
+            "Data Management Intern",
+            "Weather App Developer"
         ];
         let textIndex = 0;
         let charIndex = 0;
@@ -1618,7 +1651,7 @@
             // Check if images are loading
             console.log("All images should be loaded:");
             console.log("Profile Photo: profile.jpeg");
-            console.log("Project Thumbnails: ChatApp.jpeg, ExpenseTracker.jpeg, TeamTrack.jpeg");
+            console.log("Project Thumbnails: weatherapp.jpeg, ChatApp.jpeg, ExpenseTracker.jpeg, TeamTrack.jpeg");
         });
     </script>
 </body>
